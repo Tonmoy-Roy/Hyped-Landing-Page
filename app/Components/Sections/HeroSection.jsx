@@ -1,7 +1,7 @@
 'use client'
 import { useRef, useState } from "react";
 import cards from '../../Constants/CARDS';
-function StatCard({ card }) {
+function StatCard({ card, className = "" }) {
     return (
         <div>
             <div
@@ -14,6 +14,7 @@ function StatCard({ card }) {
                 cursor-pointer select-none
                 transition-all duration-300 ease-out
                 hover:scale-105 hover:rotate-0 hover:shadow-2xl hover:z-10
+                ${className}
             `}
             >
                 <span className="text-[#111] text-4xl sm:text-5xl md:text-6xl font-black leading-none">
@@ -34,7 +35,7 @@ function StatCard({ card }) {
     );
 }
 
-function VideoCard({ card }) {
+function VideoCard({ card, className = "" }) {
     const videoRef = useRef(null);
     const [hovered, setHovered] = useState(false);
 
@@ -58,6 +59,7 @@ function VideoCard({ card }) {
                 transition-all duration-300 ease-out
                 hover:scale-105 hover:rotate-0 hover:shadow-2xl hover:z-10
                 bg-black
+                ${className}
             `}
         >
             <video
@@ -68,7 +70,7 @@ function VideoCard({ card }) {
                 loop
                 playsInline
                 preload="auto"
-            />            
+            />
         </div>
     );
 }
@@ -93,11 +95,22 @@ export default function StatsCards() {
             <div>
                 <section className="w-full bg-[#faf4ec] py-16 sm:py-20 px-4 sm:px-8 overflow-hidden">
                     <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-wrap sm:flex-nowrap">
-
-                        {cards.map(card =>
+                        {cards.map((card, index) =>
                             card.type === "stat"
-                                ? <StatCard key={card.id} card={card} />
-                                : <VideoCard key={card.id} card={card} />
+                                ? (
+                                    <StatCard
+                                        key={card.id}
+                                        card={card}
+                                        className={index >= 2 ? "hidden sm:flex" : ""}
+                                    />
+                                )
+                                : (
+                                    <VideoCard
+                                        key={card.id}
+                                        card={card}
+                                        className={index >= 2 ? "hidden sm:flex" : ""}
+                                    />
+                                )
                         )}
                     </div>
                 </section>

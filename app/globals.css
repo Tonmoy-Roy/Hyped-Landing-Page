@@ -25,15 +25,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 40px;
-  z-index: 1000;
-}
 
 .logo {
   font-weight: 900;

@@ -81,11 +81,11 @@ export default function StatsCards() {
             <div className="">
                 <section className="w-full bg-[#faf4ec] px-5 md:px-10 pt-16 sm:pt-20 pb-10 sm:pb-16 font-['Inter',sans-serif] mt-15">
                     <div className="md:w-[70vw]">
-                        <h1 className="text-[clamp(53px,7vw,96px)] font-semibold  text-[#161616] leading-[1.05] tracking-[-1px] sm:tracking-[-2px] mb-4 sm:mb-6">
+                        <h1 className="text-5xl md:text-5xl font-semibold  text-[#161616] leading-[1.05] tracking-[-1px] sm:tracking-[-2px] mb-4 sm:mb-6">
                             Get Hyped. <span className="md:hidden"><br /></span>
                             Get Noticed.<span className="md:hidden"><br /></span> Get Results.
                         </h1>
-                        <p className="text-2xl font-semibold text-[#222] leading-relaxed">
+                        <p className="text-md md:text-2xl font-semibold text-[#222] leading-relaxed">
                             Klaar met gokken op content<br />
                             die niets oplevert?
                         </p>
@@ -94,7 +94,7 @@ export default function StatsCards() {
             </div>
             <div>
                 <section className="w-full bg-[#faf4ec] py-16 sm:py-20 px-4 sm:px-8 overflow-hidden">
-                    <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-wrap sm:flex-nowrap">
+                    <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-wrap font-['Inter',sans-serif]">
                         {cards.map((card, index) =>
                             card.type === "stat"
                                 ? (

@@ -4,36 +4,28 @@ import personImage from "../../../public/Images/imgi_3_6894757aa6dd3f84f6e463a2_
 
 export default function WijSection() {
     return (
-        <section className="w-full bg-[#faf4ec] px-5 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20">
+        <section className="w-full bg-[#faf4ec] px-5 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20 font-['Inter',sans-serif]">
 
-            {/* Big Heading */}
-            <h2 className="text-3xl font-bold leading-[1.15] tracking-[-0.5px] mb-10 sm:mb-14 max-w-5xl">
+            <h2 className="text-2xl md:text-6xl font-bold leading-[1.15] tracking-[-0.5px] mb-10 sm:mb-14 max-w-5xl md:ml-30">
                 Wij maken content die opvalt. Die blijft hangen. Die jouw
                 doelgroep raakt en jouw merk in beweging brengt. Snel,
                 krachtig en energiek.
             </h2>
 
-            {/* Bottom Row — Image + Text */}
             <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-10 md:gap-16 lg:gap-24">
 
-                {/* Left — Person Image */}
                 <div className="flex-shrink-0">
 
-                    {/* Large devices — show image */}
                     <div className="hidden sm:block">
                         <Image
                             src={personImage}
                             alt="Team member"
-                            width={220}
-                            height={280}
-                            className="rounded-2xl object-cover
-                            sm:w-[180px] sm:h-[230px]
-                            md:w-[200px] md:h-[260px]
-                            lg:w-[220px] lg:h-[280px]"
+                            width={270}
+                            height={300}
+                            className="rounded-2xl object-cover md:ml-[-1.5vw]"
                         />
                     </div>
 
-                    {/* Small devices — show video */}
                     <div className="block sm:hidden">
                         <video
                             src="/Videos/petrolhead-loop.mp4"
@@ -42,15 +34,13 @@ export default function WijSection() {
                             loop
                             playsInline
                             preload="auto"
-                            className="rounded-2xl object-cover w-[350px] h-[300px]"
+                            className="rounded-2xl object-cover h-[50vh] w-[90vw]"
                         />
                     </div>
-
                 </div>
 
-                {/* Right — Description + CTA */}
-                <div className="flex flex-col justify-center gap-5 sm:gap-6 max-w-xs sm:max-w-sm md:max-w-md pt-0 sm:pt-4 md:pt-8">
-                    <p className="text-md sm:text-lg md:text-lg font-semibold text-[#111] leading-relaxed">
+                <div className="flex flex-col justify-center gap-5 sm:gap-6 max-w-xs sm:max-w-sm md:max-w-md pt-0 sm:pt-4 md:pt-8 md:ml-40 mt-11">
+                    <p className="text-xl font-bold text-[#111] leading-relaxed md:w-[27vw]">
                         We stoppen niet bij mooie plaatjes en vette beelden. We maken het meetbaar.
                         Zo weet je precies wat werkt en wat niet. Nooit meer content zonder strategie.
                         Nooit meer content zonder resultaat.
@@ -70,7 +60,6 @@ export default function WijSection() {
                 </div>
             </div>
 
-            {/* Bottom-right scroll arrow */}
             <div className="flex justify-end mt-6 sm:mt-[-30px] md:mt-[-50px]">
                 <button className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-xl border border-[#e05c2a] text-[#e05c2a] flex items-center justify-center hover:bg-[#e05c2a] hover:text-white transition-all duration-200">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

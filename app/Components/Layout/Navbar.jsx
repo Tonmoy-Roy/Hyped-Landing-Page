@@ -13,7 +13,7 @@ export default function Navbar() {
             const y = window.scrollY;
             if (y > lastY.current && y > 60) {
                 setNavVisible(false);
-                setIsMenuOpen(false); // close mobile menu on scroll down
+                setIsMenuOpen(false); 
             } else {
                 setNavVisible(true);
             }
@@ -26,14 +26,13 @@ export default function Navbar() {
     return (
         <header
             className={`
-                fixed top-0 left-0 right-0 z-[100] bg-[#faf4ec]
-                transition-transform duration-300 ease-in-out
+                fixed top-0 left-0 right-0 z-[100]
+                transition-transform duration-300 ease-in-out font-['Inter',sans-serif]
                 ${navVisible ? "translate-y-0" : "-translate-y-full"}
             `}
         >
             <div className="flex items-center justify-between px-5 md:px-10 py-3">
 
-                {/* Logo */}
                 <Image
                     src={logo}
                     alt="GetHyped logo"
@@ -42,7 +41,6 @@ export default function Navbar() {
                     className="w-24 md:w-[150px] h-auto"
                 />
 
-                {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-8 bg-white rounded-full px-7 py-2.5 shadow-[0_1px_6px_rgba(0,0,0,0.06)]">
                     {["Expertises", "Work", "About", "Contact"].map(link => (
                         <a
@@ -55,7 +53,6 @@ export default function Navbar() {
                     ))}
                 </nav>
 
-                {/* Desktop CTA */}
                 <a
                     href="#"
                     className="hidden md:flex items-center gap-2 bg-[#fcb8fa] rounded-[20px] px-5 py-2.5 no-underline font-semibold text-[15px] text-[#111] hover:brightness-95 transition-all duration-200"
@@ -66,7 +63,6 @@ export default function Navbar() {
                     </span>
                 </a>
 
-                {/* Mobile Hamburger */}
                 <button
                     className="md:hidden p-2 rounded-lg hover:bg-black/5 transition-colors"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -82,7 +78,6 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Mobile Dropdown Menu */}
             <div
                 className={`
                     md:hidden overflow-hidden transition-all duration-300 ease-in-out
@@ -101,7 +96,6 @@ export default function Navbar() {
                         </a>
                     ))}
 
-                    {/* Mobile CTA */}
                     <a
                         href="#"
                         onClick={() => setIsMenuOpen(false)}

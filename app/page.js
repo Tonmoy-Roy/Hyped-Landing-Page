@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./Components/Layout/Navbar";
 import HeroSection from "./Components/Sections/HeroSection";
 import WijSection from "./Components/Sections/WijSection";
+import StickySection from "./Components/Sections/StickySection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar></Navbar>
       <HeroSection></HeroSection>
       <WijSection></WijSection>
+      <StickySection></StickySection>
     </div>
   );
 }

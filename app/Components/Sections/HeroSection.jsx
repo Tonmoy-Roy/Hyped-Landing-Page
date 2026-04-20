@@ -81,7 +81,7 @@ export default function StatsCards() {
             <div className="">
                 <section className="w-full bg-[#faf4ec] px-5 md:px-10 pt-16 sm:pt-20 pb-10 sm:pb-16 font-['Inter',sans-serif] mt-15">
                     <div className="md:w-[70vw]">
-                        <h1 className="text-5xl md:text-5xl font-semibold  text-[#161616] leading-[1.05] tracking-[-1px] sm:tracking-[-2px] mb-4 sm:mb-6">
+                        <h1 className="text-5xl md:text-[clamp(102px,10vw,56px)] font-semibold  text-[#161616] leading-[1.05] tracking-[-1px] sm:tracking-[-2px] mb-4 sm:mb-6">
                             Get Hyped. <span className="md:hidden"><br /></span>
                             Get Noticed.<span className="md:hidden"><br /></span> Get Results.
                         </h1>

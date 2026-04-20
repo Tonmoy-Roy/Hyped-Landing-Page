@@ -133,7 +133,7 @@ export default function Footer() {
                         <div className="md:hidden w-full flex justify-center mt-2 mb-2">
                             <a href="#contact" className="bg-[#FF5A36] text-white w-[90%] max-w-[22rem] py-2 px-2.5 rounded-[1.25rem] font-bold text-[1.05rem] flex items-center justify-between shadow-md">
                                 <span className="flex-1 text-center">Get Hyped! Neem contact op</span>
-                                <div className="bg-white text-[#FF5A36] w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                                <div className="bg-white text-[#FF5A36] w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M11.64 5.93h-.04a.2.2 0 0 0-.17.1 12.33 12.33 0 0 0-1.28 2.65 3.32 3.32 0 0 1-1.35 1.54 2.84 2.84 0 0 1-1.89.28 1.83 1.83 0 0 0-1.46.2 1.81 1.81 0 0 0-.85 1.34 5.57 5.57 0 0 0 .28 2.63A8.47 8.47 0 0 0 12 21.98a8.38 8.38 0 0 0 7.05-3.84 8.23 8.23 0 0 0 1.25-5.23 6.36 6.36 0 0 0-2.48-4.48c-1.35-1.07-2.92-1.74-4.59-2.07a12.87 12.87 0 0 1-1.59-.43z" />
                                     </svg>

@@ -18,7 +18,7 @@ const VideoCard = ({ title, tag, colorHex, videoSrc, offsetClass, className = ""
 
   return (
     <div
-      className={`relative w-[340px] h-[500px] rounded-[2rem] border-[4px] overflow-hidden shrink-0 shadow-sm bg-gray-100 transition-transform duration-300 ${offsetClass} ${className}`}
+      className={`relative w-[340px] h-[500px] rounded-[2rem] border-[8px] overflow-hidden shrink-0 shadow-sm bg-gray-100 transition-transform duration-300 ${offsetClass} ${className}`}
       style={{ borderColor: colorHex }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -77,7 +77,7 @@ export default function ContentSection() {
             Wij vertellen jouw verhaal. Op een manier die écht past bij jouw doelgroep. Met creatieve content die werkt en het verschil maakt.
           </p>
           
-          <button className="mt-2 flex items-center gap-3 px-1 py-1 pr-4 border rounded-xl font-bold text-sm hover:bg-slate-200 transition-colors duration-200">
+          <button className="mt-2 flex items-center gap-3 px-1 py-1 pr-4 border rounded-xl font-bold text-sm transition-colors duration-200 hover:-rotate-5">
             <span className="pl-4 text-md">Bekijk al ons werk</span>
             <div className="w-8 h-8 bg-[#1A1A1A] rounded-lg flex items-center justify-center text-white">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -90,7 +90,7 @@ export default function ContentSection() {
 
         <div className="w-full xl:w-full flex flex-col xl:flex-row items-center justify-center gap-8 md:gap-16 py-10 xl:py-24 px-4">
           {cards.map((card) => (
-            <VideoCard className="md:w-[25vw]" key={card.id} {...card} />
+            <VideoCard className="md:w-[25vw] hover:-rotate-3" key={card.id} {...card} />
           ))}
         </div>
 

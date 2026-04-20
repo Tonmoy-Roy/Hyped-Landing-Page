@@ -61,10 +61,11 @@ export default function ExpertiseSection() {
                                             : "bg-[#e05c2a] text-white hover:brightness-110"}`}
                                 >
                                     {item.cta}
-                                    <span className={`w-6 h-6 rounded-full flex items-center justify-center
+                                    <span className={`w-6 h-6 rounded-full flex items-center justify-center hover:-rotate-5
                                         ${isColored ? "bg-black text-white" : "bg-white text-[#e05c2a]"}`}>
-                                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
                                         </svg>
                                     </span>
                                 </a>
@@ -94,16 +95,17 @@ export default function ExpertiseSection() {
 
                                     <a
                                         href={item.href}
-                                        className={`flex items-center gap-3 rounded-full px-6 py-3 w-fit text-base font-semibold transition-all duration-200
+                                        className={`flex items-center gap-3 rounded-xl px-6 py-3 w-fit text-base font-semibold transition-all duration-200 hover:-rotate-5
                                             ${isColored
                                                 ? "bg-white text-black hover:bg-white/80"
                                                 : "bg-[#e05c2a] text-white hover:brightness-110"}`}
                                     >
                                         {item.cta}
-                                        <span className={`w-6 h-6 rounded-full flex items-center justify-center
-                                            ${isColored ? "bg-black text-white" : "bg-white text-[#e05c2a]"}`}>
-                                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                        <span className={`w-6 h-6 rounded-lg flex items-center justify-center
+                                            ${isColored ? "bg-black text-white" : "bg-white text-black"}`}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
                                             </svg>
                                         </span>
                                     </a>

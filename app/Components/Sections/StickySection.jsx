@@ -10,7 +10,7 @@ export default function ExpertiseSection() {
                 return (
                     <div
                         key={item.id}
-                        className={`sticky top-0 min-h-screen flex items-center border-b border-black/10 px-5 sm:px-10 md:px-16 lg:px-24 py-12 sm:py-20 ${item.bg}`}
+                        className={`sticky top-0 w-[95%] mx-auto min-h-screen flex items-center border-b border-black/10 px-5 sm:px-10 md:px-16 lg:px-24 py-12 sm:py-20 rounded-[2.5rem] md:rounded-[4rem] shadow-sm ${item.bg}`}
                         style={{ zIndex: 10 + index }}
                     >
                         <div className="w-full max-w-7xl mx-auto">
@@ -70,7 +70,6 @@ export default function ExpertiseSection() {
                                 </a>
                             </div>
 
-                            {/* ── DESKTOP ── */}
                             <div className="hidden md:flex items-center justify-between gap-16">
 
                                 <div className="flex-1 flex flex-col gap-6 sm:gap-8">
@@ -110,10 +109,8 @@ export default function ExpertiseSection() {
                                     </a>
                                 </div>
 
-                                {/* ── DESKTOP — Right Video ── */}
                                 <div className="relative flex-shrink-0 flex items-end justify-center">
 
-                                    {/* Number — clearly above video, not overlapping */}
                                     <span className="absolute -top-20 right-4 text-[120px] font-black select-none leading-none z-0 text-black/15">
                                         {item.id}
                                     </span>

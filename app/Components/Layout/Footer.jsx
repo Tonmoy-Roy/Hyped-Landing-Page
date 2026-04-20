@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import triangle from '../../../public/Images/actangle.svg';
+import logo from '../../../public/Images/logo.svg'
 
 export default function Footer() {
     return (
@@ -43,7 +44,7 @@ export default function Footer() {
                     <Image
                         src={triangle}
                         alt=''
-                        className="md:w-[93vw] object-cover object-top md:ml-10"
+                        className="md:w-[93vw] object-cover object-top md:ml-10 md:h-[50vh]"
                     />
                 </div>
 
@@ -62,24 +63,23 @@ export default function Footer() {
                 </div>
 
                 {/* Footer Content Grid */}
-                <div className="mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end relative z-10">
+                <div className="mt-8 md:mt-21 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end relative z-10 md:ml-[-48]">
 
                     {/* Left: Giant Logo */}
                     <div className="lg:col-span-5 flex items-end">
-                        <h1
-                            className="text-7xl md:text-[8rem] lg:text-[9rem] font-black tracking-tighter leading-none text-black"
-                            style={{
-                                transform: 'rotate(-4deg) translateY(10px)',
-                                transformOrigin: 'bottom left',
-                                WebkitTextStroke: '1px black'
-                            }}
-                        >
-
-                        </h1>
+                        <div className="w-[18rem] md:w-[22rem] lg:w-[24rem]">
+                            <Image
+                                src={logo}
+                                alt="Get Hyped logo"
+                                className="w-full h-auto"
+                            />
+                        </div>
                     </div>
+                    
+                    
 
                     {/* Middle: Nav Menu & Socials */}
-                    <div className="lg:col-span-4 flex flex-col gap-8 lg:pb-4 md:ml-35 md:w-[28vw]">
+                    <div className="lg:col-span-4 flex flex-col gap-8 lg:pb-4 md:ml-35 md:w-[28vw] ">
                         {/* Nav Pills */}
                         <div className="flex flex-wrap gap-3">
                             {['Expertises', 'Work', 'About', 'Contact'].map((item) => (
@@ -112,7 +112,7 @@ export default function Footer() {
                     </div>
 
                     {/* Right: Contact Info */}
-                    <div className="lg:col-span-3 flex flex-col gap-6 lg:pb-4 text-[0.9rem] text-slate-800 border md:ml-40">
+                    <div className="lg:col-span-3 flex flex-col gap-6 lg:pb-4 text-[0.9rem] text-slate-800 md:ml-40">
                         <div>
                             <h4 className="font-bold text-black mb-1">Contact</h4>
                             <p>info@gethyped.nl</p>
@@ -128,14 +128,13 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Copyright Row */}
-                <div className="mt-16 md:mt-20 flex flex-col md:flex-row justify-between text-xs text-slate-500 font-medium pb-2 relative z-10">
-                    <p>© 2025 Get Hyped</p>
-                    <div className="flex gap-8 md:gap-24 mt-4 md:mt-0">
+                <div className="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end text-xs text-slate-500 font-medium pb-2 relative z-10 md:mr-8">
+                    <div className="flex gap-8 md:gap-36">
+                        <p>© 2025 Get Hyped</p>
                         <p>© Design by Dylan</p>
                         <a href="#" className="hover:text-slate-800 transition">Privacyvoorwaarden</a>
                     </div>
                 </div>
-
             </div>
         </div>
     );

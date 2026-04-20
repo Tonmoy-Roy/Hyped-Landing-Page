@@ -54,7 +54,7 @@ export default function MarqueSection() {
 
                 </div>
             </div>
-            <div className='border-t border-bs-zinc-500 md:w-[94vw] ml-10 mb-50'></div>
+            <div className='border-t border-bs-zinc-500 w-[90vw] md:w-[94vw] ml-5 md:ml-10 md:mb-15 text-center'></div>
         </div>
 
     );

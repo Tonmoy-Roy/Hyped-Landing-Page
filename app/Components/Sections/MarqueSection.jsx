@@ -30,7 +30,7 @@ export default function MarqueSection() {
         `}
                 </style>
 
-                <div className="w-full max-w-[100vw] overflow-hidden relative">
+                <div className="w-full max-w-[100vw] overflow-hidden relative mb-15">
 
                     <div className="absolute top-0 left-0 w-24 h-full" />
                     <div className="absolute top-0 right-0 w-24 h-full" />
@@ -54,6 +54,7 @@ export default function MarqueSection() {
 
                 </div>
             </div>
+            <div className='border-t border-bs-zinc-500 md:w-[94vw] ml-10 mb-50'></div>
         </div>
 
     );

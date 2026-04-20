@@ -69,7 +69,7 @@ const VideoCard = ({ title, tag, colorHex, videoSrc, offsetClass }) => {
 
 export default function ContentSection() {
   return (
-    <div className="min-h-screen bg-[#FDF9F2] flex items-center justify-center p-6 md:p-8 font-sans overflow-hidden text-slate-900">
+    <div className="min-h-screen flex items-center justify-center p-6 md:p-8 font-sans overflow-hidden text-slate-900">
       <div className="max-w-[1400px] w-full items-center xl:items-stretch justify-between gap-12">
 
         <div className="w-full xl:w-[35%] flex flex-col items-start space-y-6 pt-10 xl:pt-24">

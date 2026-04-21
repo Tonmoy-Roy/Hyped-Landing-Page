@@ -18,7 +18,7 @@ const VideoCard = ({ title, tag, colorHex, videoSrc, offsetClass, className = ""
 
   return (
     <div
-      className={`relative w-[340px] h-[500px] rounded-[2rem] border-[8px] overflow-hidden shrink-0 shadow-sm bg-gray-100 transition-transform duration-300 ${offsetClass} ${className}`}
+      className={`relative w-[340px] h-[500px] rounded-[2rem] border-8 overflow-hidden shrink-0 shadow-sm bg-gray-100 transition-transform duration-300 ${offsetClass} ${className}`}
       style={{ borderColor: colorHex }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -88,7 +88,7 @@ export default function ContentSection() {
           </button>
         </div>
 
-        <div className="w-full xl:w-full flex flex-col xl:flex-row items-center justify-center gap-8 md:gap-16 py-10 xl:py-24 px-4">
+        <div className="w-full xl:w-full flex flex-col xl:flex-row gap-8 md:gap-16 py-10 xl:py-24 px-4">
           {cards.map((card) => (
             <VideoCard className="md:w-[25vw] hover:-rotate-3" key={card.id} {...card} />
           ))}

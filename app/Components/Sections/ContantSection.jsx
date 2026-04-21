@@ -66,7 +66,7 @@ const VideoCard = ({ title, tag, colorHex, videoSrc, offsetClass, className = ""
 
 export default function ContentSection() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 md:p-8 font-sans overflow-hidden text-slate-900 md:ml-20">
+    <div className="min-h-screen flex items-center justify-center p-6 md:p-8 font-sans overflow-hidden text-slate-900">
       <div className="max-w-[1400px] w-full items-center xl:items-stretch justify-between gap-12">
 
         <div className="w-full xl:w-[35%] flex flex-col items-start space-y-6 pt-10 xl:pt-24">
@@ -88,7 +88,7 @@ export default function ContentSection() {
           </button>
         </div>
 
-        <div className="w-full xl:w-full flex flex-col xl:flex-row gap-8 md:gap-16 py-10 xl:py-24 px-4">
+        <div className="w-full xl:w-full flex flex-col xl:flex-row items-center justify-center gap-15 md:gap-16 py-10 xl:py-24 px-4">
           {cards.map((card) => (
             <VideoCard className="md:w-[25vw] hover:-rotate-3" key={card.id} {...card} />
           ))}
